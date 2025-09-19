@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>🚀 Task Manager</h1>
+  </header>
+
+  <div class="main-container">
+    <div class="board-container" id="boardContainer">
+      <div class="board" id="todo">
+        <h2>To Do</h2>
+        <div class="task-list" id="todoList"></div>
+        <button class="add-btn" onclick="addTask('todo')">+ Add Task</button>
+      </div>
+
+      <div class="board" id="inprogress">
+        <h2>In Progress</h2>
+        <div class="task-list" id="inprogressList"></div>
+        <button class="add-btn" onclick="addTask('inprogress')">+ Add Task</button>
+      </div>
+
+      <div class="board" id="done">
+        <h2>Done</h2>
+        <div class="task-list" id="doneList"></div>
+        <button class="add-btn" onclick="addTask('done')">+ Add Task</button>
+      </div>
+    </div>
+
+    <!-- Right side buttons -->
+    <div class="side-buttons">
+      <button id="addBoard">➕ Add Board</button>
+      <button id="clearAll">🗑 Clear All</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
